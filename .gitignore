@@ -1,2 +1,3 @@
 server.*.log
 private-docs/
+.playwright-cli/
