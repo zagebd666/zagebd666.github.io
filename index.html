@@ -3,189 +3,162 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="宋棋，武汉大学电子信息工程本科生。关注嵌入式系统、机器人与无人系统、边缘智能和软硬件协同。">
-    <title>宋棋 · Song Qi</title>
+    <meta
+      name="description"
+      content="宋棋，武汉大学电子信息工程本科生。关注嵌入式系统、软硬件协同、机器人与无人系统。"
+    >
+    <title>宋棋 / Song Qi</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header" data-compact="false">
-      <a class="wordmark" href="#top" aria-label="回到首页">Song Qi</a>
-      <nav class="nav" aria-label="页面导航">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#systems">Systems</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <div class="page">
+      <header class="site-header">
+        <a class="mark" href="#top" aria-label="回到首页">SQ</a>
+        <nav class="nav" aria-label="页面导航">
+          <a href="#work">Work</a>
+          <a href="#systems">Systems</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-media">
-          <img src="assets/profile.png" alt="宋棋个人照片">
-        </div>
-        <div class="hero-copy">
-          <p class="kicker">武汉大学 · 电子信息工程</p>
-          <h1>宋棋</h1>
-          <p class="intro">
-            我喜欢把分散的硬件、软件、算法和通信链路接成一个能稳定工作的系统。
-            现在主要在嵌入式系统、机器人与无人系统、边缘智能这些交叉地带做项目。
-          </p>
-          <div class="quick-notes" aria-label="个人概况">
-            <span>Electronic information systems</span>
-            <span>Embedded platforms</span>
-            <span>Robotics and edge AI</span>
+      <main id="top">
+        <section class="hero" aria-labelledby="page-title">
+          <div class="identity">
+            <p class="eyebrow">Wuhan University</p>
+            <h1 id="page-title">宋棋<br><span>Song Qi</span></h1>
+            <p class="affiliation">Electronic Information Engineering</p>
           </div>
-        </div>
-      </section>
 
-      <section id="about" class="section about">
-        <div class="section-label">About</div>
-        <div class="about-grid">
-          <h2>系统比单点模块更有意思。</h2>
-          <div class="about-copy">
-            <p>
-              我本科阶段做过几类看起来不同的东西：RISC-V 处理器、ZYNQ 脑机接口、无人机感知定位、FreeRTOS 智能车。
-              它们共同训练的是同一种能力：先理解真实约束，再拆分模块、适配平台、联调验证。
+          <div class="intro">
+            <p class="lead">
+              I am drawn to systems where code has to negotiate with devices, timing, and uncertainty.
             </p>
             <p>
-              我不太想把自己提前固定在某一个窄标签里。更想保留一种可以迁移的系统底座：
-              能读懂硬件限制，也能把算法和软件放到真实平台上跑起来。
+              本科阶段我一直在做偏系统的项目：处理器、RTOS、FPGA 信号处理、无人机感知定位和嵌入式控制。它们不完全属于同一个方向，但训练的是同一种底层能力：理解约束、划分模块、打通接口，并把系统带到可验证的状态。
             </p>
+            <dl class="now-list">
+              <div>
+                <dt>Current</dt>
+                <dd>嵌入式平台、机器人系统、软硬件协同</dd>
+              </div>
+              <div>
+                <dt>Base</dt>
+                <dd>从硬件边界到软件部署的系统联调</dd>
+              </div>
+              <div>
+                <dt>Next</dt>
+                <dd>把这套系统能力迁移到更复杂的智能硬件和无人系统里</dd>
+              </div>
+            </dl>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="work" class="section work">
-        <div class="section-label">Selected work</div>
-        <div class="work-list">
-          <article class="work-item primary-work">
-            <div class="work-index">01</div>
-            <div class="work-body">
-              <p class="work-kind">Processor · RTOS · verification</p>
-              <h2>RISC-V 五级流水线 CPU 与 RT-Thread 移植</h2>
-              <p>
-                从五级流水线结构、冒险处理到 RT-Thread 移植和 Coremark 运行，把一个处理器设计从仿真推进到系统软件可运行的状态。
-              </p>
-              <div class="tags">
-                <span>RISC-V</span>
-                <span>Pipeline CPU</span>
-                <span>RT-Thread</span>
-                <span>Coremark</span>
+        <section id="work" class="section" aria-labelledby="work-title">
+          <div class="section-head">
+            <p class="section-kicker">Selected work</p>
+            <h2 id="work-title">Projects where the constraints became visible.</h2>
+          </div>
+
+          <div class="work-list">
+            <article class="entry">
+              <p class="entry-year">2025</p>
+              <div class="entry-main">
+                <h3>RISC-V 五级流水线 CPU 与 RT-Thread 移植</h3>
+                <p>
+                  从流水线结构、冒险处理到 RT-Thread 移植和 Coremark 运行，把处理器设计推进到系统软件可运行的状态。
+                </p>
+                <p class="meta">RISC-V / Pipeline CPU / RT-Thread / Coremark</p>
               </div>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <div class="work-index">02</div>
-            <div class="work-body">
-              <p class="work-kind">FPGA · signal processing</p>
-              <h2>ZYNQ / FPGA 脑机接口系统</h2>
-              <p>
-                基于 ZYNQ 和 ADS1299 做多通道脑电采集，在 PL 端实现 FBCCA 并行流水线，让实时信号处理从脚本实验走向硬件系统。
-              </p>
-              <div class="tags">
-                <span>ZYNQ</span>
-                <span>FPGA</span>
-                <span>ADS1299</span>
-                <span>FBCCA</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <div class="work-index">03</div>
-            <div class="work-body">
-              <p class="work-kind">UAV · perception · deployment</p>
-              <h2>无人机感知定位与巡查系统</h2>
-              <p>
-                在 Jetson Orin NX 上部署 FastLIO2 和 YOLO11-OBB，处理定位、识别、地面站回传和通信优化这些实际飞行里绕不开的问题。
-              </p>
-              <div class="tags">
-                <span>Jetson Orin NX</span>
-                <span>FastLIO2</span>
-                <span>YOLO11-OBB</span>
-                <span>BLE</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <div class="work-index">04</div>
-            <div class="work-body">
-              <p class="work-kind">Embedded · control interface</p>
-              <h2>ESP32-S3 / FreeRTOS 智能车</h2>
-              <p>
-                用 ESP32-S3 和 FreeRTOS 搭建边缘计算智能车，围绕定位、控制接口和团队调试效率做系统集成。
-              </p>
-              <div class="tags">
-                <span>ESP32-S3</span>
-                <span>FreeRTOS</span>
-                <span>Edge computing</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <div class="work-index">05</div>
-            <div class="work-body">
-              <p class="work-kind">Navigation · autonomy · operations</p>
-              <h2>无人机物流系统技术研究</h2>
-              <p>
-                围绕 RTK 定位、PX4/QGC/NTRIP 配置、FastPlanner 自主避障和管理网站，完成低空任务系统的端到端联调。
-              </p>
-              <div class="tags">
-                <span>RTK</span>
-                <span>PX4</span>
-                <span>NTRIP</span>
-                <span>FastPlanner</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="systems" class="section systems">
-        <div class="section-label">Systems</div>
-        <div class="system-layout">
-          <h2>我在意的不是“用了什么技术栈”，而是系统如何闭环。</h2>
-          <div class="system-columns">
-            <article>
-              <h3>平台</h3>
-              <p>RISC-V、ZYNQ/FPGA、Jetson、ESP32-S3 这些平台各自约束不同，适合训练软硬件划分和资源意识。</p>
             </article>
-            <article>
-              <h3>实时</h3>
-              <p>RT-Thread、FreeRTOS、PX4/QGC 让我更关注时延、接口、状态机和系统可调试性。</p>
+
+            <article class="entry">
+              <p class="entry-year">2025</p>
+              <div class="entry-main">
+                <h3>ZYNQ / FPGA 脑机接口系统</h3>
+                <p>
+                  基于 ZYNQ 和 ADS1299 做多通道脑电采集，在 PL 端实现 FBCCA 并行流水线，让实时信号处理从脚本实验走向硬件系统。
+                </p>
+                <p class="meta">ZYNQ / FPGA / ADS1299 / FBCCA</p>
+              </div>
             </article>
-            <article>
-              <h3>部署</h3>
-              <p>FastLIO2、YOLO11-OBB、FBCCA 这类算法只有放到具体平台和场景里，才真正暴露问题。</p>
+
+            <article class="entry">
+              <p class="entry-year">2024</p>
+              <div class="entry-main">
+                <h3>无人机感知定位与巡查系统</h3>
+                <p>
+                  在 Jetson Orin NX 上部署 FastLIO2 和 YOLO11-OBB，处理定位、识别、地面站回传和通信优化这些实际飞行里绕不开的问题。
+                </p>
+                <p class="meta">Jetson Orin NX / FastLIO2 / YOLO11-OBB / BLE</p>
+              </div>
             </article>
-            <article>
-              <h3>验证</h3>
-              <p>能跑起来只是第一步；指标、日志、稳定性和反复实验，才决定系统是不是可信。</p>
+
+            <article class="entry">
+              <p class="entry-year">2024</p>
+              <div class="entry-main">
+                <h3>ESP32-S3 / FreeRTOS 智能车</h3>
+                <p>
+                  用 ESP32-S3 和 FreeRTOS 搭建边缘计算智能车，围绕定位、控制接口和团队调试效率做系统集成。
+                </p>
+                <p class="meta">ESP32-S3 / FreeRTOS / Edge computing</p>
+              </div>
+            </article>
+
+            <article class="entry">
+              <p class="entry-year">2024</p>
+              <div class="entry-main">
+                <h3>无人机物流系统技术研究</h3>
+                <p>
+                  围绕 RTK 定位、PX4/QGC/NTRIP 配置、FastPlanner 自主避障和管理网站，完成低空任务系统的端到端联调。
+                </p>
+                <p class="meta">RTK / PX4 / NTRIP / FastPlanner</p>
+              </div>
             </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="contact" class="section contact">
-        <div class="section-label">Contact</div>
-        <div class="contact-layout">
-          <h2>欢迎交流嵌入式系统、无人系统和软硬件协同相关的问题。</h2>
+        <section id="systems" class="section systems" aria-labelledby="systems-title">
+          <div class="section-head">
+            <p class="section-kicker">Systems</p>
+            <h2 id="systems-title">A transferable base, not a narrow label.</h2>
+          </div>
+
+          <div class="principles">
+            <article>
+              <h3>Platform sense</h3>
+              <p>能意识到资源、时延、接口和硬件边界，不把算法当成脱离平台的孤立模块。</p>
+            </article>
+            <article>
+              <h3>Integration</h3>
+              <p>能把采集、计算、控制、通信和可视化接到同一个闭环里，并在联调中定位问题。</p>
+            </article>
+            <article>
+              <h3>Verification</h3>
+              <p>能用指标、日志、复现实验和长时间测试判断系统是否真的可靠，而不是只停在演示。</p>
+            </article>
+            <article>
+              <h3>Transfer</h3>
+              <p>这些能力可以迁移到机器人、边缘智能、智能硬件、信号处理和体系结构相关方向。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact" aria-labelledby="contact-title">
+          <div class="section-head">
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title">Open to conversations around embedded systems and autonomous platforms.</h2>
+          </div>
           <div class="contact-links">
             <a href="mailto:2023302121087@whu.edu.cn">2023302121087@whu.edu.cn</a>
             <a href="https://github.com/zagebd666" target="_blank" rel="noreferrer">github.com/zagebd666</a>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
-    <footer class="footer">
-      <span>Song Qi</span>
-      <span>Wuhan University · Electronic Information Engineering</span>
-    </footer>
-
-    <script src="script.js"></script>
+      <footer class="footer">
+        <span>Song Qi</span>
+        <span>Wuhan University</span>
+      </footer>
+    </div>
   </body>
 </html>
