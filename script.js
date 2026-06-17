@@ -1,6 +1,7 @@
-const topbar = document.querySelector(".topbar");
+const topbar = document.querySelector(".site-header");
 
 const syncHeaderState = () => {
+  if (!topbar) return;
   topbar.dataset.compact = String(window.scrollY > 12);
 };
 
