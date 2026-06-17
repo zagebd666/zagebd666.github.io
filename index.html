@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="宋棋，武汉大学电子信息工程本科生，面向电子信息、嵌入式系统、机器人与无人系统、边缘智能方向的个人主页。">
+    <title>宋棋 | Electronic Information Systems</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar" data-compact="false">
+      <a class="brand" href="#top" aria-label="回到首页">Song Qi</a>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#profile">Profile</a>
+        <a href="#systems">Systems</a>
+        <a href="#projects">Projects</a>
+        <a href="#fit">Research Fit</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">Wuhan University · Electronic Information Engineering</p>
+          <h1>宋棋</h1>
+          <p class="lead">
+            我关注真实约束下的电子信息系统：从硬件平台、实时软件、算法部署到通信控制与实验验证，
+            把不同模块组织成稳定运行的完整系统。
+          </p>
+          <div class="hero-actions" aria-label="快捷操作">
+            <a class="button primary" href="mailto:2023302121087@whu.edu.cn">联系邮箱</a>
+            <a class="button secondary" href="#projects">查看项目</a>
+          </div>
+        </div>
+        <figure class="portrait-wrap">
+          <img src="assets/profile.png" alt="宋棋个人照片">
+        </figure>
+      </section>
+
+      <section id="profile" class="section-band profile-band">
+        <div class="section-heading">
+          <p class="eyebrow">Profile</p>
+          <h2>面向推免申请的核心信息</h2>
+        </div>
+        <div class="metric-grid" aria-label="申请概况">
+          <article class="metric-card">
+            <span class="metric-value">3.9181 / 4.0000</span>
+            <span class="metric-label">前五学期 GPA</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">13 / 277</span>
+            <span class="metric-label">专业排名，以学院盖章证明为准</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">CET-4 620 · CET-6 571</span>
+            <span class="metric-label">英语能力</span>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">2027</span>
+            <span class="metric-label">预计本科毕业年份</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="systems" class="section-band system-band">
+        <div class="section-heading">
+          <p class="eyebrow">System Capability</p>
+          <h2>可迁移的系统能力</h2>
+          <p>
+            无人机、脑机接口、RISC-V 处理器和智能车只是应用场景。真正可复用的是从约束分析到系统验证的闭环能力。
+          </p>
+        </div>
+        <div class="system-map" aria-label="系统能力地图">
+          <article class="system-node">
+            <h3>硬件平台</h3>
+            <p>RISC-V、ZYNQ/FPGA、Jetson Orin NX、RK3588、ESP32-S3、ADS1299。</p>
+          </article>
+          <article class="system-node">
+            <h3>实时软件</h3>
+            <p>RT-Thread、FreeRTOS、PX4/QGroundControl、NTRIP 与嵌入式接口调试。</p>
+          </article>
+          <article class="system-node">
+            <h3>算法部署</h3>
+            <p>FBCCA 硬件加速、FastLIO2、FastPlanner、YOLO11-OBB 与边缘端迁移。</p>
+          </article>
+          <article class="system-node">
+            <h3>验证闭环</h3>
+            <p>Coremark、实时吞吐、定位精度、通信稳定性、实际飞行与系统联调。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section-band project-band">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Projects</p>
+          <h2>代表项目</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card highlight">
+            <div class="project-meta">
+              <span>队长</span>
+              <span>国家级一等奖</span>
+            </div>
+            <h3>RISC-V 五级流水线 CPU 与 RT-Thread 移植</h3>
+            <p>
+              围绕 RISC-V 指令集完成五级流水线 CPU 设计，处理数据冒险与控制冒险，并通过 RT-Thread 移植与 Coremark 运行验证系统完整性。
+            </p>
+            <ul class="tag-list">
+              <li>RISC-V</li>
+              <li>RT-Thread</li>
+              <li>Coremark</li>
+              <li>Computer Architecture</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>队长</span>
+              <span>国家级三等奖</span>
+            </div>
+            <h3>ZYNQ/FPGA 脑机接口系统</h3>
+            <p>
+              基于 AMD-Xilinx ZYNQ 与 ADS1299 构建多通道脑电采集系统，在 PL 端实现 FBCCA 并行流水线，较 PC 端 Python 实现获得约 1000 倍速度提升。
+            </p>
+            <ul class="tag-list">
+              <li>ZYNQ</li>
+              <li>FPGA</li>
+              <li>ADS1299</li>
+              <li>FBCCA</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>队员</span>
+              <span>湖北赛区一等奖</span>
+            </div>
+            <h3>无人机感知定位与巡查系统</h3>
+            <p>
+              在 Jetson Orin NX 上部署 FastLIO2 与 YOLO11-OBB，完成定点巡查、目标识别与地面站回传，并优化 BLE 通信与平台迁移。
+            </p>
+            <ul class="tag-list">
+              <li>Jetson Orin NX</li>
+              <li>FastLIO2</li>
+              <li>YOLO11-OBB</li>
+              <li>BLE</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>队员</span>
+              <span>区域一等奖</span>
+            </div>
+            <h3>ESP32-S3 / FreeRTOS 智能车</h3>
+            <p>
+              基于 ESP32-S3 边缘计算平台搭建智能车系统，集成 FreeRTOS、定位、机械臂控制与团队开发调试接口。
+            </p>
+            <ul class="tag-list">
+              <li>ESP32-S3</li>
+              <li>FreeRTOS</li>
+              <li>Edge Computing</li>
+              <li>Control Interface</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>队员</span>
+              <span>工程闭环</span>
+            </div>
+            <h3>无人机物流系统技术研究</h3>
+            <p>
+              围绕 RTK 精准定位、PX4/QGC/NTRIP 配置、FastPlanner 自主避障与管理网站搭建，推进低空任务系统的端到端联调。
+            </p>
+            <ul class="tag-list">
+              <li>RTK</li>
+              <li>PX4</li>
+              <li>NTRIP</li>
+              <li>FastPlanner</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="fit" class="section-band fit-band">
+        <div class="section-heading">
+          <p class="eyebrow">Research Fit</p>
+          <h2>研究方向适配</h2>
+          <p>
+            研究生阶段希望以系统能力为底座，进入具体课题后聚焦真实问题，把工程实现经验沉淀为可解释、可验证、可复用的研究贡献。
+          </p>
+        </div>
+        <div class="fit-list">
+          <article>
+            <h3>嵌入式计算与芯片系统</h3>
+            <p>软硬件划分、实时性、资源约束、系统软件与验证。</p>
+          </article>
+          <article>
+            <h3>机器人与无人系统</h3>
+            <p>感知、定位、规划、通信、控制与机载计算协同。</p>
+          </article>
+          <article>
+            <h3>边缘智能与实时信号处理</h3>
+            <p>将算法转化为可部署、可量化、可复用的系统模块。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section-band contact-band">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>交流与材料</h2>
+          <p>
+            当前主页为公开展示版本。正式投递时，简历、成绩单、排名证明、英语证明和项目作品集建议按目标学院要求单独发送。
+          </p>
+        </div>
+        <div class="contact-row">
+          <a class="button primary" href="mailto:2023302121087@whu.edu.cn">2023302121087@whu.edu.cn</a>
+          <a class="button secondary" href="https://github.com/zagebd666" target="_blank" rel="noreferrer">GitHub Profile</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Song Qi · Wuhan University</span>
+      <span>Electronic Information Systems · Embedded Systems · Robotics</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
