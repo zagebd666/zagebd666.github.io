@@ -15,8 +15,8 @@ The visual target is closer to a quiet research notebook than a portfolio landin
 ## Content rules
 
 - Keep private academic metrics and admissions wording off the public homepage.
-- Let project descriptions imply ability through systems work.
+- Avoid self-evaluating capability claims. Let project scenes, constraints, and artifacts carry the signal.
 - Keep the main identity broad: embedded systems, autonomous platforms, soft-hardware integration.
-- Use the future-planning idea as a transferable systems base, not a narrow direction claim.
+- Frame future direction through recurring engineering situations, not broad self-assessment.
 - Use real project media sparingly. Prefer hardware benches, prototype photos, and field tests over decorative or stock-like images.
 - Videos should be compressed for the web and placed as evidence, not spectacle. Prefer muted, controlled playback with a poster frame.

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="宋棋，武汉大学电子信息工程本科生。关注嵌入式系统、软硬件协同、机器人与无人系统。"
+      content="宋棋，武汉大学电子信息工程本科生。记录嵌入式平台、软硬件协同、机器人与无人系统相关项目。"
     >
     <title>宋棋 / Song Qi</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -37,9 +37,9 @@
               I am drawn to systems where code has to negotiate with devices, timing, and uncertainty.
             </p>
             <p>
-              本科阶段我一直在做偏系统的项目：处理器、RTOS、FPGA 信号处理、无人机感知定位和嵌入式控制。它们不完全属于同一个方向，但训练的是同一种底层能力：理解约束、划分模块、打通接口，并把系统带到可验证的状态。
+              本科阶段做过处理器、RTOS、FPGA 信号处理、无人机感知定位和嵌入式控制。方向并不完全相同，但问题经常落在同一组细节上：硬件边界、实时调度、接口、日志和反复验证。
             </p>
-            <figure class="system-map" aria-label="系统能力路径">
+            <figure class="system-map" aria-label="系统路径">
               <figcaption>System loop</figcaption>
               <ol>
                 <li>
@@ -71,11 +71,11 @@
               </div>
               <div>
                 <dt>Base</dt>
-                <dd>从硬件边界到软件部署的系统联调</dd>
+                <dd>硬件边界、软件部署、联调验证</dd>
               </div>
               <div>
                 <dt>Next</dt>
-                <dd>把这套系统能力迁移到更复杂的智能硬件和无人系统里</dd>
+                <dd>更复杂的智能硬件和无人系统</dd>
               </div>
             </dl>
           </div>
@@ -84,7 +84,7 @@
         <section id="demos" class="section demos" aria-labelledby="demos-title">
           <div class="section-head">
             <p class="section-kicker">Field demos</p>
-            <h2 id="demos-title">Scenes from builds, tests, and hardware benches.</h2>
+            <h2 id="demos-title">A few artifacts from builds, tests, and hardware benches.</h2>
           </div>
 
           <div class="media-grid">
@@ -102,7 +102,7 @@
               </video>
               <figcaption>
                 <span>Event-camera obstacle avoidance</span>
-                A 39-second demo combining event-style visual feedback with the physical test scene, showing real-time avoidance behavior under lab constraints.
+                A 39-second lab demo with event-style visual feedback beside the physical obstacle-avoidance scene.
               </figcaption>
             </figure>
 
@@ -114,7 +114,7 @@
               >
               <figcaption>
                 <span>BCI hardware bench</span>
-                ZYNQ / ADS1299 acquisition setup, signal path verification, and host-side observation.
+                ZYNQ / ADS1299 acquisition setup during signal-path checks and host-side observation.
               </figcaption>
             </figure>
 
@@ -126,7 +126,7 @@
               >
               <figcaption>
                 <span>UAV prototype</span>
-                Mechanical frame, onboard sensing, power, and communication hardware integrated as one platform.
+                Mechanical frame with onboard sensing, power, and communication hardware.
               </figcaption>
             </figure>
 
@@ -138,7 +138,7 @@
               >
               <figcaption>
                 <span>Field test</span>
-                Flight-side debugging where localization, communication, and safety constraints become visible.
+                Flight-side debugging around localization, communication, and safety margins.
               </figcaption>
             </figure>
 
@@ -150,7 +150,7 @@
               >
               <figcaption>
                 <span>System form</span>
-                A compact view of the UAV stack: frame, sensing, computation, and actuation.
+                A compact view of the UAV stack: frame, sensing, computation, actuation.
               </figcaption>
             </figure>
           </div>
@@ -159,7 +159,7 @@
         <section id="work" class="section" aria-labelledby="work-title">
           <div class="section-head">
             <p class="section-kicker">Selected work</p>
-            <h2 id="work-title">Projects where the constraints became visible.</h2>
+            <h2 id="work-title">Selected projects, with the rough edges left visible.</h2>
           </div>
 
           <div class="work-list">
@@ -168,7 +168,7 @@
               <div class="entry-main">
                 <h3>RISC-V 五级流水线 CPU 与 RT-Thread 移植</h3>
                 <p>
-                  从流水线结构、冒险处理到 RT-Thread 移植和 Coremark 运行，把处理器设计推进到系统软件可运行的状态。
+                  五级流水线、冒险处理、RT-Thread 移植和 Coremark 测试串在一起，问题集中在处理器设计和系统软件的接口处。
                 </p>
                 <p class="meta">RISC-V / Pipeline CPU / RT-Thread / Coremark</p>
               </div>
@@ -179,7 +179,7 @@
               <div class="entry-main">
                 <h3>ZYNQ / FPGA 脑机接口系统</h3>
                 <p>
-                  基于 ZYNQ 和 ADS1299 做多通道脑电采集，在 PL 端实现 FBCCA 并行流水线，让实时信号处理从脚本实验走向硬件系统。
+                  ZYNQ + ADS1299 的多通道脑电采集台架，PL 端实现 FBCCA 并行流水线，围绕采集链路和实时处理做验证。
                 </p>
                 <p class="meta">ZYNQ / FPGA / ADS1299 / FBCCA</p>
               </div>
@@ -190,7 +190,7 @@
               <div class="entry-main">
                 <h3>无人机感知定位与巡查系统</h3>
                 <p>
-                  在 Jetson Orin NX 上部署 FastLIO2 和 YOLO11-OBB，处理定位、识别、地面站回传和通信优化这些实际飞行里绕不开的问题。
+                  Jetson Orin NX 上跑 FastLIO2 和 YOLO11-OBB，联调定位、识别、地面站回传和通信链路。
                 </p>
                 <p class="meta">Jetson Orin NX / FastLIO2 / YOLO11-OBB / BLE</p>
               </div>
@@ -201,7 +201,7 @@
               <div class="entry-main">
                 <h3>ESP32-S3 / FreeRTOS 智能车</h3>
                 <p>
-                  用 ESP32-S3 和 FreeRTOS 搭建边缘计算智能车，围绕定位、控制接口和团队调试效率做系统集成。
+                  ESP32-S3 + FreeRTOS 的边缘计算智能车，主要处理定位、控制接口和团队协作调试。
                 </p>
                 <p class="meta">ESP32-S3 / FreeRTOS / Edge computing</p>
               </div>
@@ -212,7 +212,7 @@
               <div class="entry-main">
                 <h3>无人机物流系统技术研究</h3>
                 <p>
-                  围绕 RTK 定位、PX4/QGC/NTRIP 配置、FastPlanner 自主避障和管理网站，完成低空任务系统的端到端联调。
+                  RTK 定位、PX4/QGC/NTRIP 配置、FastPlanner 自主避障和管理网站的低空任务系统联调。
                 </p>
                 <p class="meta">RTK / PX4 / NTRIP / FastPlanner</p>
               </div>
@@ -223,25 +223,25 @@
         <section id="systems" class="section systems" aria-labelledby="systems-title">
           <div class="section-head">
             <p class="section-kicker">Systems</p>
-            <h2 id="systems-title">A transferable base, not a narrow label.</h2>
+            <h2 id="systems-title">The parts I keep coming back to.</h2>
           </div>
 
           <div class="principles">
             <article>
               <h3>Platform sense</h3>
-              <p>能意识到资源、时延、接口和硬件边界，不把算法当成脱离平台的孤立模块。</p>
+              <p>资源、时延、接口和硬件边界，常常先决定问题的形状。</p>
             </article>
             <article>
               <h3>Integration</h3>
-              <p>能把采集、计算、控制、通信和可视化接到同一个闭环里，并在联调中定位问题。</p>
+              <p>采集、计算、控制、通信和可视化接到一起后，很多问题才真正出现。</p>
             </article>
             <article>
               <h3>Verification</h3>
-              <p>能用指标、日志、复现实验和长时间测试判断系统是否真的可靠，而不是只停在演示。</p>
+              <p>指标、日志、复现实验和长时间测试，比单次演示更说明问题。</p>
             </article>
             <article>
               <h3>Transfer</h3>
-              <p>这些能力可以迁移到机器人、边缘智能、智能硬件、信号处理和体系结构相关方向。</p>
+              <p>这些经验自然延伸到机器人、边缘智能、智能硬件、信号处理和体系结构。</p>
             </article>
           </div>
         </section>
@@ -249,7 +249,7 @@
         <section id="contact" class="section contact" aria-labelledby="contact-title">
           <div class="section-head">
             <p class="section-kicker">Contact</p>
-            <h2 id="contact-title">Open to conversations around embedded systems and autonomous platforms.</h2>
+            <h2 id="contact-title">For embedded systems, autonomous platforms, and the space between them.</h2>
           </div>
           <div class="contact-links">
             <a href="mailto:2023302121087@whu.edu.cn">2023302121087@whu.edu.cn</a>
