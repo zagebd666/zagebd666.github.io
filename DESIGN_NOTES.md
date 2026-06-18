@@ -19,3 +19,4 @@ The visual target is closer to a quiet research notebook than a portfolio landin
 - Keep the main identity broad: embedded systems, autonomous platforms, soft-hardware integration.
 - Use the future-planning idea as a transferable systems base, not a narrow direction claim.
 - Use real project media sparingly. Prefer hardware benches, prototype photos, and field tests over decorative or stock-like images.
+- Videos should be compressed for the web and placed as evidence, not spectacle. Prefer muted, controlled playback with a poster frame.

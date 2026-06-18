@@ -400,6 +400,19 @@ h1 span {
   filter: saturate(0.9) contrast(1.03);
 }
 
+.media-video {
+  grid-column: 1 / -1;
+}
+
+.media-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #0a0b0a;
+  border: 1px solid var(--line);
+}
+
 .media-wide img {
   aspect-ratio: 16 / 9;
 }
