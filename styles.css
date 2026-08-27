@@ -154,8 +154,8 @@ h1 span {
 .lead {
   max-width: 760px;
   color: var(--ink);
-  font-size: clamp(28px, 3.4vw, 43px);
-  line-height: 1.35;
+  font-size: clamp(25px, 2.7vw, 35px);
+  line-height: 1.48;
 }
 
 .intro-copy > p:not(.lead) {
@@ -676,7 +676,7 @@ h1 span {
   }
 
   .lead {
-    font-size: clamp(26px, 8vw, 34px);
+    font-size: 24px;
   }
 
   .identity {
