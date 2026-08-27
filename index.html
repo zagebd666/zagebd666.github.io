@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="宋棋，武汉大学电子信息工程本科生。记录嵌入式平台、软硬件协同、机器人与无人系统相关项目。"
+      content="宋棋，武汉大学电子信息工程本科生。关注具身智能、机器人学习、嵌入式系统与真实环境中的系统部署。"
     >
     <title>宋棋 / Song Qi</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -16,9 +16,9 @@
       <header class="site-header">
         <a class="mark" href="#top" aria-label="回到首页">SQ</a>
         <nav class="nav" aria-label="页面导航">
-          <a href="#demos">Demos</a>
-          <a href="#work">Work</a>
-          <a href="#systems">Systems</a>
+          <a href="#embodied">Projects</a>
+          <a href="#work">Foundations</a>
+          <a href="#systems">Approach</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -29,140 +29,151 @@
             <p class="eyebrow">Wuhan University</p>
             <h1 id="page-title">宋棋<br><span>Song Qi</span></h1>
             <p class="affiliation">Electronic Information Engineering</p>
-            <p class="coordinates">Embedded systems / autonomous platforms / hardware-aware software</p>
+            <p class="coordinates">Embodied intelligence / robot learning / real-world systems</p>
           </div>
 
           <div class="intro">
             <p class="lead">
-              I am drawn to systems where code has to negotiate with devices, timing, and uncertainty.
+              My current work sits at the point where perception becomes physical action.
             </p>
             <p>
-              本科阶段做过处理器、RTOS、FPGA 信号处理、无人机感知定位和嵌入式控制。方向并不完全相同，但问题经常落在同一组细节上：硬件边界、实时调度、接口、日志和反复验证。
+              近期的工作从嵌入式与无人系统逐渐走向具身智能：在真实机械臂上研究视觉强化学习，也在四足机器人赛道中处理感知、状态机与运动控制。处理器、RTOS、FPGA 和无人机项目，则构成了理解实时性、硬件边界与系统联调的底层背景。
             </p>
-            <figure class="system-map" aria-label="系统路径">
-              <figcaption>System loop</figcaption>
+            <figure class="system-map" aria-label="具身系统闭环">
+              <figcaption>Embodied loop</figcaption>
               <ol>
                 <li>
                   <span>01</span>
-                  <strong>Sense</strong>
-                  <em>signals, sensors, platform state</em>
+                  <strong>Perceive</strong>
+                  <em>vision, depth, proprioception</em>
                 </li>
                 <li>
                   <span>02</span>
-                  <strong>Compute</strong>
-                  <em>RTOS, FPGA, edge models</em>
+                  <strong>Decide</strong>
+                  <em>policy, state machine, planning</em>
                 </li>
                 <li>
                   <span>03</span>
                   <strong>Act</strong>
-                  <em>control, communication, deployment</em>
+                  <em>control, interaction, deployment</em>
                 </li>
                 <li>
                   <span>04</span>
-                  <strong>Verify</strong>
-                  <em>logs, metrics, repeatable tests</em>
+                  <strong>Evaluate</strong>
+                  <em>trials, ablations, failure cases</em>
                 </li>
               </ol>
             </figure>
             <dl class="now-list">
               <div>
                 <dt>Current</dt>
-                <dd>嵌入式平台、机器人系统、软硬件协同</dd>
+                <dd>机器人学习、具身感知与真实环境部署</dd>
               </div>
               <div>
-                <dt>Base</dt>
-                <dd>硬件边界、软件部署、联调验证</dd>
+                <dt>Methods</dt>
+                <dd>视觉策略、强化学习、多模态感知与闭环控制</dd>
               </div>
               <div>
-                <dt>Next</dt>
-                <dd>更复杂的智能硬件和无人系统</dd>
+                <dt>Foundation</dt>
+                <dd>嵌入式系统、实时计算与软硬件协同</dd>
               </div>
             </dl>
           </div>
         </section>
 
-        <section id="demos" class="section demos" aria-labelledby="demos-title">
+        <section id="embodied" class="section featured" aria-labelledby="embodied-title">
           <div class="section-head">
-            <p class="section-kicker">Field demos</p>
-            <h2 id="demos-title">A few artifacts from builds, tests, and hardware benches.</h2>
+            <p class="section-kicker">Embodied systems</p>
+            <h2 id="embodied-title">Learning and control on physical platforms.</h2>
           </div>
 
-          <div class="media-grid">
-            <figure class="media-card media-video">
-              <video
-                controls
-                loop
-                muted
-                playsinline
-                preload="metadata"
-                poster="assets/media/event-avoidance-poster.jpg"
-                aria-label="Event-camera obstacle avoidance demo"
-              >
-                <source src="assets/media/event-avoidance.mp4" type="video/mp4">
-              </video>
-              <figcaption>
-                <span>Event-camera obstacle avoidance</span>
-                A 39-second lab demo with event-style visual feedback beside the physical obstacle-avoidance scene.
-              </figcaption>
-            </figure>
+          <div class="featured-list">
+            <article class="featured-project">
+              <div class="project-media portrait-media">
+                <video
+                  controls
+                  muted
+                  playsinline
+                  preload="metadata"
+                  poster="assets/media/franka-online-rl-poster.webp"
+                  aria-label="Franka 机械臂在线视觉强化学习实验视频"
+                >
+                  <source src="assets/media/franka-online-rl.mp4" type="video/mp4">
+                </video>
+                <p class="media-note">Real-world evaluation · 80 sec</p>
+              </div>
+              <div class="project-copy">
+                <p class="project-index">01 / Robot learning</p>
+                <h3>Franka 在线视觉强化学习</h3>
+                <p class="project-lede">
+                  基于 RLinf 搭建真实 Franka 在线强化学习系统，以 CNN 视觉策略学习 6-DoF 末端增量控制。
+                </p>
+                <p>
+                  SAC / RLPD 训练中，将 SpaceMouse 采集的 20 条成功示教与在线 replay 按 1:1 混合。NUC 负责真机交互，RTX 4090 负责 rollout 与训练，双机之间通过 Ray 运行异步 Actor–Learner 并同步策略权重。
+                </p>
+                <p>
+                  实验中定位到夹持物相对夹爪位姿漂移导致的数据非平稳问题。重新固定装夹并统一数据条件后，在标准随机初始位姿评测中完成 20/20 次自主成功；黑图、冻结帧、时序延迟和背景变化实验用于检查视觉闭环依赖与域外失效模式。
+                </p>
+                <dl class="project-facts">
+                  <div><dt>Demonstrations</dt><dd>20</dd></div>
+                  <div><dt>Replay mix</dt><dd>1 : 1</dd></div>
+                  <div><dt>Evaluation</dt><dd>20 / 20</dd></div>
+                </dl>
+                <p class="meta">RLinf / CNN policy / SAC / RLPD / Ray / Franka</p>
+              </div>
+            </article>
 
-            <figure class="media-card media-wide">
-              <img
-                src="assets/media/bci-bench.webp"
-                alt="ZYNQ and ADS1299 brain-computer interface hardware bench with EEG cap and laptop"
-                loading="lazy"
-              >
-              <figcaption>
-                <span>BCI hardware bench</span>
-                ZYNQ / ADS1299 acquisition setup during signal-path checks and host-side observation.
-              </figcaption>
-            </figure>
-
-            <figure class="media-card media-tall">
-              <img
-                src="assets/media/drone-prototype.webp"
-                alt="Top-down view of quadrotor prototype with onboard hardware"
-                loading="lazy"
-              >
-              <figcaption>
-                <span>UAV prototype</span>
-                Mechanical frame with onboard sensing, power, and communication hardware.
-              </figcaption>
-            </figure>
-
-            <figure class="media-card media-small">
-              <img
-                src="assets/media/drone-flight.webp"
-                alt="Quadrotor flight test near a campus building at night"
-                loading="lazy"
-              >
-              <figcaption>
-                <span>Field test</span>
-                Flight-side debugging around localization, communication, and safety margins.
-              </figcaption>
-            </figure>
-
-            <figure class="media-card media-small">
-              <img
-                src="assets/media/drone-system.webp"
-                alt="Rendered quadrotor system with protective frame and onboard module"
-                loading="lazy"
-              >
-              <figcaption>
-                <span>System form</span>
-                A compact view of the UAV stack: frame, sensing, computation, actuation.
-              </figcaption>
-            </figure>
+            <article class="featured-project reverse">
+              <div class="project-media portrait-media">
+                <img
+                  src="assets/media/cyberdog-track.webp"
+                  alt="小米杯四足机器人复杂赛道现场，CyberDog 正在赛道中运行"
+                  loading="lazy"
+                >
+                <p class="media-note">Competition track · CyberDog</p>
+              </div>
+              <div class="project-copy">
+                <p class="project-index">02 / Legged robotics</p>
+                <h3>四足机器人多模态自主感知与赛程控制系统</h3>
+                <p class="project-award">小米杯 · 全国三等奖</p>
+                <p class="project-lede">
+                  面向复杂赛道自主运行任务，使用 ROS 2 / Gazebo 完成从仿真验证到真实 CyberDog 平台迁移。
+                </p>
+                <p>
+                  系统覆盖 11 个赛段，以分层 FSM 组织赛程状态与运动控制。仿真环境用于复现赛段、检查状态转换和控制逻辑，随后迁移到实机进行完整赛道联调。
+                </p>
+                <p>
+                  机载 RGB / RGB-D 相机与视觉、激光、腿式里程计共同提供环境和自身状态信息；黄线、球体、障碍及指定目标识别接口，与定位、感知、运动控制等 ROS 2 模块在同一闭环中完成测试。
+                </p>
+                <dl class="project-facts">
+                  <div><dt>Course stages</dt><dd>11</dd></div>
+                  <div><dt>Control</dt><dd>Hierarchical FSM</dd></div>
+                  <div><dt>Platform</dt><dd>CyberDog</dd></div>
+                </dl>
+                <p class="meta">ROS 2 / Gazebo / RGB-D / multimodal odometry / FSM</p>
+              </div>
+            </article>
           </div>
         </section>
 
         <section id="work" class="section" aria-labelledby="work-title">
           <div class="section-head">
-            <p class="section-kicker">Selected work</p>
-            <h2 id="work-title">Selected projects, with the rough edges left visible.</h2>
+            <p class="section-kicker">Systems foundation</p>
+            <h2 id="work-title">The engineering underneath the robot.</h2>
           </div>
 
           <div class="work-list">
+            <article class="entry">
+              <p class="entry-year">2025</p>
+              <div class="entry-main">
+                <h3>无人机感知定位与事件视觉避障</h3>
+                <p>
+                  在 Jetson Orin NX 上联调 FastLIO2、YOLO11-OBB、通信链路与地面站回传，并测试事件视觉条件下的在线避障过程。
+                </p>
+                <p class="meta">Jetson Orin NX / FastLIO2 / YOLO11-OBB / event camera</p>
+              </div>
+            </article>
+
             <article class="entry">
               <p class="entry-year">2025</p>
               <div class="entry-main">
@@ -188,31 +199,20 @@
             <article class="entry">
               <p class="entry-year">2024</p>
               <div class="entry-main">
-                <h3>无人机感知定位与巡查系统</h3>
-                <p>
-                  Jetson Orin NX 上跑 FastLIO2 和 YOLO11-OBB，联调定位、识别、地面站回传和通信链路。
-                </p>
-                <p class="meta">Jetson Orin NX / FastLIO2 / YOLO11-OBB / BLE</p>
-              </div>
-            </article>
-
-            <article class="entry">
-              <p class="entry-year">2024</p>
-              <div class="entry-main">
                 <h3>ESP32-S3 / FreeRTOS 智能车</h3>
                 <p>
-                  ESP32-S3 + FreeRTOS 的边缘计算智能车，主要处理定位、控制接口和团队协作调试。
+                  ESP32-S3 + FreeRTOS 的边缘计算智能车，围绕定位、控制接口和系统调试展开。
                 </p>
-                <p class="meta">ESP32-S3 / FreeRTOS / Edge computing</p>
+                <p class="meta">ESP32-S3 / FreeRTOS / edge computing</p>
               </div>
             </article>
 
             <article class="entry">
               <p class="entry-year">2024</p>
               <div class="entry-main">
-                <h3>无人机物流系统技术研究</h3>
+                <h3>无人机物流系统</h3>
                 <p>
-                  RTK 定位、PX4/QGC/NTRIP 配置、FastPlanner 自主避障和管理网站的低空任务系统联调。
+                  RTK 定位、PX4 / QGC / NTRIP 配置、FastPlanner 自主避障和管理网站共同组成低空任务系统。
                 </p>
                 <p class="meta">RTK / PX4 / NTRIP / FastPlanner</p>
               </div>
@@ -220,28 +220,103 @@
           </div>
         </section>
 
+        <section class="section field-notes" aria-labelledby="notes-title">
+          <div class="section-head">
+            <p class="section-kicker">Field notes</p>
+            <h2 id="notes-title">Artifacts from benches and test sites.</h2>
+          </div>
+
+          <div class="media-grid">
+            <figure class="media-card media-video">
+              <video
+                controls
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="assets/media/event-avoidance-poster.jpg"
+                aria-label="事件视觉无人机避障实验"
+              >
+                <source src="assets/media/event-avoidance.mp4" type="video/mp4">
+              </video>
+              <figcaption>
+                <span>Event-camera obstacle avoidance</span>
+                事件视觉反馈与真实避障场景的同步实验记录。
+              </figcaption>
+            </figure>
+
+            <figure class="media-card media-wide">
+              <img
+                src="assets/media/bci-bench.webp"
+                alt="ZYNQ 与 ADS1299 脑机接口硬件台架"
+                loading="lazy"
+              >
+              <figcaption>
+                <span>BCI hardware bench</span>
+                ZYNQ / ADS1299 采集链路与主机端观测。
+              </figcaption>
+            </figure>
+
+            <figure class="media-card media-tall">
+              <img
+                src="assets/media/drone-prototype.webp"
+                alt="搭载机载硬件的四旋翼原型机俯视图"
+                loading="lazy"
+              >
+              <figcaption>
+                <span>UAV prototype</span>
+                传感、计算、供电与通信硬件的机上集成。
+              </figcaption>
+            </figure>
+
+            <figure class="media-card media-small">
+              <img
+                src="assets/media/drone-flight.webp"
+                alt="校园建筑附近的四旋翼夜间飞行测试"
+                loading="lazy"
+              >
+              <figcaption>
+                <span>Field test</span>
+                定位、通信和安全边界的外场调试。
+              </figcaption>
+            </figure>
+
+            <figure class="media-card media-small">
+              <img
+                src="assets/media/drone-system.webp"
+                alt="带防护框和机载模块的四旋翼系统"
+                loading="lazy"
+              >
+              <figcaption>
+                <span>System form</span>
+                飞行平台上的感知、计算与执行链路。
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section id="systems" class="section systems" aria-labelledby="systems-title">
           <div class="section-head">
-            <p class="section-kicker">Systems</p>
-            <h2 id="systems-title">The parts I keep coming back to.</h2>
+            <p class="section-kicker">Approach</p>
+            <h2 id="systems-title">What remains after the demo.</h2>
           </div>
 
           <div class="principles">
             <article>
-              <h3>Platform sense</h3>
-              <p>资源、时延、接口和硬件边界，常常先决定问题的形状。</p>
+              <h3>Closed loop</h3>
+              <p>感知、策略与控制只有放进同一个实时闭环，才开始暴露真正的问题。</p>
             </article>
             <article>
-              <h3>Integration</h3>
-              <p>采集、计算、控制、通信和可视化接到一起后，很多问题才真正出现。</p>
+              <h3>Physical detail</h3>
+              <p>装夹、时延、传感噪声和接口状态，往往直接改变数据与策略行为。</p>
             </article>
             <article>
-              <h3>Verification</h3>
-              <p>指标、日志、复现实验和长时间测试，比单次演示更说明问题。</p>
+              <h3>Evaluation</h3>
+              <p>重复试验、消融和失败样本，用来区分偶然成功与稳定行为。</p>
             </article>
             <article>
-              <h3>Transfer</h3>
-              <p>这些经验自然延伸到机器人、边缘智能、智能硬件、信号处理和体系结构。</p>
+              <h3>System depth</h3>
+              <p>从计算平台到上层策略的完整链路，使具身问题落到可检查的工程细节上。</p>
             </article>
           </div>
         </section>
@@ -249,7 +324,7 @@
         <section id="contact" class="section contact" aria-labelledby="contact-title">
           <div class="section-head">
             <p class="section-kicker">Contact</p>
-            <h2 id="contact-title">For embedded systems, autonomous platforms, and the space between them.</h2>
+            <h2 id="contact-title">Embodied intelligence, robot learning, and real-world systems.</h2>
           </div>
           <div class="contact-links">
             <a href="mailto:2023302121087@whu.edu.cn">2023302121087@whu.edu.cn</a>

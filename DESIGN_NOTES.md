@@ -16,7 +16,7 @@ The visual target is closer to a quiet research notebook than a portfolio landin
 
 - Keep private academic metrics and admissions wording off the public homepage.
 - Avoid self-evaluating capability claims. Let project scenes, constraints, and artifacts carry the signal.
-- Keep the main identity broad: embedded systems, autonomous platforms, soft-hardware integration.
-- Frame future direction through recurring engineering situations, not broad self-assessment.
+- Keep embodied intelligence and robot learning as the current thread, with embedded systems and autonomous platforms as the technical foundation.
+- Describe physical interaction, experimental conditions, and failure analysis before making any broad self-assessment.
 - Use real project media sparingly. Prefer hardware benches, prototype photos, and field tests over decorative or stock-like images.
 - Videos should be compressed for the web and placed as evidence, not spectacle. Prefer muted, controlled playback with a poster frame.
