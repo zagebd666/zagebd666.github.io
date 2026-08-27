@@ -91,18 +91,17 @@ h3 {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(250px, 0.66fr) minmax(0, 1.34fr);
-  gap: clamp(44px, 8vw, 128px);
-  min-height: calc(100svh - 82px);
-  padding: clamp(76px, 11vw, 136px) 0 clamp(66px, 9vw, 118px);
+  padding: clamp(72px, 9vw, 112px) 0 clamp(72px, 9vw, 108px);
   border-bottom: 1px solid var(--line);
 }
 
 .identity {
-  align-self: start;
-  position: sticky;
-  top: 36px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: clamp(32px, 6vw, 92px);
+  padding-bottom: 34px;
+  border-bottom: 1px solid var(--line-strong);
 }
 
 .eyebrow,
@@ -117,57 +116,58 @@ h3 {
 }
 
 h1 {
-  margin-top: 18px;
-  font-size: clamp(58px, 7vw, 96px);
-  line-height: 0.96;
+  margin-top: 12px;
+  font-size: clamp(48px, 6vw, 76px);
+  line-height: 1;
   letter-spacing: 0;
 }
 
 h1 span {
+  margin-left: 14px;
   color: var(--quiet);
+  font-size: 0.54em;
   font-weight: 520;
 }
 
-.affiliation {
-  max-width: 260px;
-  margin-top: 28px;
-  color: var(--text);
-  font-size: 15px;
-}
-
 .coordinates {
-  max-width: 270px;
-  margin-top: clamp(84px, 12vw, 150px);
-  padding-top: 18px;
+  max-width: 340px;
+  padding-bottom: 8px;
   color: var(--muted);
-  border-top: 1px solid var(--line-strong);
   font-size: 12px;
   line-height: 1.55;
+  text-align: right;
   text-transform: uppercase;
 }
 
 .intro {
-  align-self: end;
   min-width: 0;
+  margin-top: clamp(52px, 7vw, 82px);
+}
+
+.intro-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: clamp(36px, 7vw, 92px);
+  align-items: start;
 }
 
 .lead {
-  max-width: 780px;
+  max-width: 760px;
   color: var(--ink);
-  font-size: clamp(30px, 4.2vw, 58px);
-  line-height: 1.07;
+  font-size: clamp(28px, 3.4vw, 43px);
+  line-height: 1.35;
 }
 
-.intro > p:not(.lead) {
-  max-width: 760px;
-  margin-top: 34px;
+.intro-copy > p:not(.lead) {
+  max-width: 460px;
+  padding-top: 8px;
   color: var(--text);
-  font-size: clamp(17px, 1.45vw, 20px);
+  font-size: 16px;
 }
 
 .system-map {
-  max-width: 760px;
-  margin: 44px 0 0;
+  max-width: none;
+  margin: 58px 0 0;
   padding: 0;
 }
 
@@ -245,18 +245,26 @@ h1 span {
 
 .now-list {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0;
-  max-width: 760px;
-  margin: 44px 0 0;
+  max-width: none;
+  margin: 32px 0 0;
   border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line);
 }
 
 .now-list div {
-  display: grid;
-  grid-template-columns: 140px minmax(0, 1fr);
-  gap: 22px;
-  padding: 18px 0;
-  border-bottom: 1px solid var(--line);
+  min-width: 0;
+  padding: 18px 22px 20px 0;
+  border-right: 1px solid var(--line);
+}
+
+.now-list div:not(:first-child) {
+  padding-left: 22px;
+}
+
+.now-list div:last-child {
+  border-right: 0;
 }
 
 .now-list dt {
@@ -266,7 +274,7 @@ h1 span {
 }
 
 .now-list dd {
-  margin: 0;
+  margin: 8px 0 0;
   color: var(--text);
 }
 
@@ -617,17 +625,22 @@ h1 span {
       var(--bg);
   }
 
-  .hero,
   .section {
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    min-height: auto;
+  .identity {
+    align-items: start;
   }
 
-  .identity {
-    position: static;
+  .intro-copy {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .intro-copy > p:not(.lead) {
+    max-width: 680px;
+    padding-top: 0;
   }
 
   .section-head h2 {
@@ -650,20 +663,31 @@ h1 span {
   }
 
   .hero {
-    padding-top: 54px;
+    padding-top: 48px;
     padding-bottom: 64px;
   }
 
   h1 {
-    font-size: clamp(52px, 17vw, 72px);
+    font-size: clamp(44px, 13vw, 58px);
+  }
+
+  h1 span {
+    margin-left: 8px;
   }
 
   .lead {
-    font-size: clamp(30px, 10vw, 42px);
+    font-size: clamp(26px, 8vw, 34px);
+  }
+
+  .identity {
+    flex-direction: column;
+    gap: 24px;
   }
 
   .coordinates {
-    margin-top: 34px;
+    max-width: 300px;
+    padding-bottom: 0;
+    text-align: left;
   }
 
   .system-map ol {
@@ -678,11 +702,26 @@ h1 span {
     border-bottom: 1px solid var(--line);
   }
 
+  .now-list {
+    grid-template-columns: 1fr;
+  }
+
   .now-list div,
   .entry,
   .principles article {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+
+  .now-list div,
+  .now-list div:not(:first-child) {
+    padding: 16px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .now-list div:last-child {
+    border-bottom: 0;
   }
 
   .media-grid {
